@@ -30,3 +30,10 @@ Intake via morluto/rea. Execution via ATL.
 ## Doors
     npm run smoke                        # wiring only
     npm run smoke /path/to/app.apk       # full intake
+
+## Proot Ubuntu Breakthrough
+- REA is now fully built and functional inside proot Ubuntu (glibc).
+- `tsrs` (Rust compiler) caused OOM/arena crashes. Replaced with `typescript@6.0.3`.
+- Forced REA to use `tsc.js` via `scripts/run-typescript.mjs` patch.
+- Build requires `NODE_OPTIONS="--max-old-space-size=4096"` to pass 2GB heap limit.
+- JADX guard is gone. Next: pull real APK, extract protocol.
