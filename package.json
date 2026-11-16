@@ -1,0 +1,16 @@
+{
+  "name": "apk2ubuntu",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "apk2ubuntu": "./src/cli.ts"
+  },
+  "scripts": {
+    "smoke": "node src/smoke-test.ts",
+    "intake": "node src/smoke-test.ts"
+  },
+  "engines": {
+    "node": ">=22.7.0"
+  }
+}

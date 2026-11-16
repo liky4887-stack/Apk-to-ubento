@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+.sample-*.json
+test.apk
+*.apk
+.npmrc
+.DS_Store
